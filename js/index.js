@@ -24,3 +24,12 @@ function clearDisplay(e) {
     e.preventDefault();
     display.value = '';
 }
+
+const xPow = document.querySelector('.pow');
+xPow.addEventListener('click', powFunc);
+
+function powFunc(e) {
+    e.preventDefault();
+    display.value = eval(Math.pow(display.value, 2));
+}
+
