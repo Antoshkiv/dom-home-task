@@ -33,3 +33,12 @@ function powFunc(e) {
     display.value = eval(Math.pow(display.value, 2));
 }
 
+const xSqrt = document.querySelector('.sqrt');
+xSqrt.addEventListener('click', sqrtFunc);
+
+function sqrtFunc(e) {
+    e.preventDefault();
+    display.value = eval(Math.sqrt(display.value));
+}
+
+
